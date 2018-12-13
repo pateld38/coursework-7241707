@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cvK-wS-LfY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Monday-->
+        <scene sceneID="6hJ-LG-axV">
+            <objects>
+                <tableViewController id="t8x-n8-uvL" customClass="TaskController" customModule="BrainGain5" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gag-rE-FOb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.51855534091222533" green="1" blue="0.91346808443459326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskItem" textLabel="aV2-ie-usE" style="IBUITableViewCellStyleDefault" id="GGW-Hj-46K">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GGW-Hj-46K" id="vi0-Zr-MVO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aV2-ie-usE">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="t8x-n8-uvL" id="7qo-TG-GPh"/>
+                            <outlet property="delegate" destination="t8x-n8-uvL" id="agr-pF-DV9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Monday" id="Lmw-HW-EZI">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Back" style="plain" id="88E-yX-5z3">
+                                <connections>
+                                    <segue destination="cvK-wS-LfY" kind="popoverPresentation" popoverAnchorBarButtonItem="88E-yX-5z3" id="YZI-Kn-IFQ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" systemItem="edit" id="yz5-Ma-A0Y">
+                                <connections>
+                                    <action selector="editM:" destination="t8x-n8-uvL" id="FF0-0w-oCl"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tur-yZ-oMP">
+                            <connections>
+                                <action selector="Add:" destination="t8x-n8-uvL" id="lJl-cW-6vC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRq-Cb-wEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="143"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="0Yl-TN-DDb">
+            <objects>
+                <viewController id="J5G-GD-lrk" customClass="ViewController1" customModule="BrainGain5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="am3-uN-oQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJm-UR-k1F">
+                                <rect key="frame" x="50" y="337" width="275" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.75161033397034438" blue="0.2085970220889698" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Task"/>
+                                <connections>
+                                    <action selector="AddTask:" destination="J5G-GD-lrk" eventType="touchUpInside" id="aSG-9l-41H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter New Task Below:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80g-PF-NF6">
+                                <rect key="frame" x="20" y="40" width="335" height="105"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-69-DYy">
+                                <rect key="frame" x="80" y="208" width="215" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61076191228670207" green="0.77197882584869915" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MJm-UR-k1F" firstAttribute="leading" secondItem="cun-Mi-t6n" secondAttribute="leading" constant="50" id="8by-al-nVO"/>
+                            <constraint firstItem="cun-Mi-t6n" firstAttribute="trailing" secondItem="ZKY-69-DYy" secondAttribute="trailing" constant="80" id="SqE-5U-kwp"/>
+                            <constraint firstItem="cun-Mi-t6n" firstAttribute="bottom" secondItem="MJm-UR-k1F" secondAttribute="bottom" constant="300" id="VbY-pG-3Rg"/>
+                            <constraint firstItem="ZKY-69-DYy" firstAttribute="leading" secondItem="cun-Mi-t6n" secondAttribute="leading" constant="80" id="Wph-Nn-ObM"/>
+                            <constraint firstItem="MJm-UR-k1F" firstAttribute="top" secondItem="ZKY-69-DYy" secondAttribute="bottom" constant="99" id="Xxb-H1-gAY"/>
+                            <constraint firstItem="cun-Mi-t6n" firstAttribute="trailing" secondItem="80g-PF-NF6" secondAttribute="trailing" constant="20" id="ZDP-kR-yqU"/>
+                            <constraint firstItem="80g-PF-NF6" firstAttribute="leading" secondItem="cun-Mi-t6n" secondAttribute="leading" constant="20" id="eKb-MX-qGa"/>
+                            <constraint firstItem="80g-PF-NF6" firstAttribute="top" secondItem="cun-Mi-t6n" secondAttribute="top" constant="20" id="eqZ-ef-9nk"/>
+                            <constraint firstItem="cun-Mi-t6n" firstAttribute="bottom" secondItem="80g-PF-NF6" secondAttribute="bottom" constant="522" id="glm-Yr-6va"/>
+                            <constraint firstItem="cun-Mi-t6n" firstAttribute="trailing" secondItem="MJm-UR-k1F" secondAttribute="trailing" constant="50" id="qQb-MJ-6y9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cun-Mi-t6n"/>
+                    </view>
+                    <connections>
+                        <outlet property="Write1" destination="ZKY-69-DYy" id="og4-yf-1A7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ab3-Tv-Yyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="144"/>
+        </scene>
+        <!--View Controller Main-->
+        <scene sceneID="dOw-uD-tZ4">
+            <objects>
+                <viewController storyboardIdentifier="ImmediateController" id="cvK-wS-LfY" customClass="ViewControllerMain" customModule="BrainGain5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfQ-jN-2m0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-dv-gs5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="03d-bC-2q3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6f-ui-O7H">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="162"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Monday"/>
+                                                <connections>
+                                                    <action selector="Monday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="n76-ZH-5Jx"/>
+                                                    <segue destination="NI8-eZ-CPh" kind="show" id="00G-hA-M7h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDD-in-AuB">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="162"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                                <state key="normal" title="Tuesday"/>
+                                                <connections>
+                                                    <action selector="Tuesday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="DmT-yg-dxz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ptz-OL-7Fn">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n56-fo-jQj">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="161.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Wednesday"/>
+                                                <connections>
+                                                    <action selector="Wednesday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="45z-IN-Wqg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-TI-aQ9">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="161.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Thursday"/>
+                                                <connections>
+                                                    <action selector="Thursday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="SHM-8z-weF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="Zlb-aX-YjB"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d6w-fj-onO">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW6-c7-yIF">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="162"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Friday"/>
+                                                <connections>
+                                                    <action selector="Friday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="40Y-85-jxO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1h-Xk-bLw">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="162"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Saturday"/>
+                                                <connections>
+                                                    <action selector="Saturday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="eQk-lu-1R6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="SMH-cF-7sz"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4ub-lt-OjN">
+                                        <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UV-Ru-I0u">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="161.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="Sunday"/>
+                                                <connections>
+                                                    <action selector="Sunday:" destination="cvK-wS-LfY" eventType="touchUpInside" id="FxS-kg-nyZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEa-8U-nsY">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="161.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="E0l-qW-KxS"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69878732940105159" green="0.75477614107433255" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gIp-ME-gkP" firstAttribute="trailing" secondItem="X0f-dv-gs5" secondAttribute="trailing" id="9Dy-52-7yb"/>
+                            <constraint firstItem="X0f-dv-gs5" firstAttribute="top" secondItem="gIp-ME-gkP" secondAttribute="top" id="Dtb-e0-13Q"/>
+                            <constraint firstItem="X0f-dv-gs5" firstAttribute="leading" secondItem="gIp-ME-gkP" secondAttribute="leading" id="N6y-M0-WRB"/>
+                            <constraint firstItem="gIp-ME-gkP" firstAttribute="bottom" secondItem="X0f-dv-gs5" secondAttribute="bottom" id="Z1B-Zh-26u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gIp-ME-gkP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WsB-7c-zEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2202" y="923"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Yu-c9-Uod">
+            <objects>
+                <navigationController id="NI8-eZ-CPh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lZg-oB-64k">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="t8x-n8-uvL" kind="relationship" relationship="rootViewController" id="LHl-7r-gMI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYy-IV-ITj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="145"/>
+        </scene>
+    </scenes>
+</document>
